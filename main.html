@@ -16,18 +16,23 @@
   <div class="col-md-4 ">
     <label for="first-name-input" class="form-label">First Name</label>
     <input type="text" class="form-control " id="first-name-input"  required>
-   
+   <div class="invalid-feedback">
+      First Name Required
+    </div>
   </div>
   <div class="col-md-4">
     <label for="last-name-input" class="form-label">Last Name</label>
     <input type="text" class="form-control" id="last-name-input"  required>
+	  <div class="invalid-feedback">
+      Last Name Required
+    </div>
    
   </div>
   <div class="col-md-4">
     <label for="email-input" class="form-label">Email Address</label>
     <div class="input-group has-validation" >
       
-      <input type="text" class="form-control" id="email-input" placeholder="xyz@abc.com" aria-describedby="inputGroupPrepend" required>
+      <input type="email" class="form-control" id="email-input" placeholder="xyz@abc.com" aria-describedby="inputGroupPrepend" required>
       <div class="invalid-feedback">
         Please choose a email
       </div>
@@ -44,10 +49,11 @@
     <label for="grad-year-select" class="form-label">Graduation Year</label>
     <select class="form-select" id="grad-year-select" required>
       <option selected disabled value="">Choose...</option>
+		<option>2020</option>
       <option>2021</option>
 		<option>2022</option>
 		<option>2023</option>
-		<option>2024</option>
+		
 		
     </select>
     <div class="invalid-feedback">
